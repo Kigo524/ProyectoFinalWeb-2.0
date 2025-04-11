@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header{
+    background: #173747; /*Falta buscar otro color*/
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #ffffff;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#coments{
+    padding: 20px;
+    margin: 20px;
+    background: #173747;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    color: rgb(248, 132, 49);
+}
+
+h2{
+    color: #173747; /*Falta buscar otro color*/
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: #173747;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+table{
+    width: 100%;
+    border: 1px solid #173747;
+}
+th, td{
+    width: left;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #173747;
+}
+
+div{
+    background-color: rgba(165, 181, 163, 0.2); /*Creo que asi no se pone un cuadro extra a modo de separar ambos comentarios*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 10px; /*para el espacio interno*/
+    border-radius: 15px;
+}
+
+.opinion{
+    display: flex;
+    align-items: center; /*alinear la imagen con el texto*/
+    gap: 5px; /*espacio entre imagen y texto*/
+    justify-content: flex-start; /*Alienralo a la izquierda*/
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.opinion img {
+    width: 35px;
+    height: auto;
+    margin: 0; /*por si hay algun margen adicional*/
+}
