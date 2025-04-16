@@ -7,7 +7,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -20,28 +20,45 @@
 
 <body>
     <header>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#minecraft">Minecraft</a></li>
+            <li class="divider"></li>
+            <li><a href="#pokemon-rojo">Pokemon Rojo</a></li>
+            <li class="divider"></li>
+            <li><a href="#league-of-legends">League of Legends</a></li>
+            <li class="divider"></li>
+            <li><a href="#rainbow-six-siege">Rainbow Six Siege</a></li> <!-- Corregido -->
+        </ul>
         <div class="navbar-fixed">
-          <nav>
-            <div class="nav-wrapper deep-purple darken-2" style="padding-left: 5%; padding-right: 5%;">
-              <a href="#" class="brand-logo"><span class="material-symbols-outlined">stadia_controller</span> GameZoneKigo2</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#juegos">Juegos</a></li>
-                <li><a href="#comparativa">Comparativa</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-              </ul>
-            </div>
-          </nav>
-
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#juegos">Juegos</a></li>
-                <li><a href="#comparativa">Comparativa</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-          </ul>
+            <nav role="navigation">
+                <div class="nav-wrapper deep-purple darken-2" style="padding-left: 5%; padding-right: 5%;">
+                    <a href="#" class="brand-logo">
+                        <span class="material-symbols-outlined">stadia_controller</span> GameZoneKigo2
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li>
+                            <a class="dropdown-trigger" href="#juegos" data-target="dropdown1">
+                                Juegos<i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <li><a href="#comparativa">Comparativa</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
+    
+        <!-- Mobile Navigation -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#juegos">Juegos</a></li>
+            <li><a href="#comparativa">Comparativa</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
     </header>
 
     <section id="inicio">
@@ -63,8 +80,8 @@
 
     <br><br>
 
-    <section id="juegos">
-        <div class="container center-align z-depth-2" style="padding: 2%;">
+    <section id="minecraft">
+        </section><div class="container center-align z-depth-2" style="padding: 2%;">
             <h2>Juegos</h2>
             <h3>Minecraft</h3>
             <p>Un juego que ha trascendido épocas.</p>
@@ -118,7 +135,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="pokemon-rojo">
         <div class="container">
             <h3>Pokemón Rojo</h3>
             <img src="img/Car__tula_Rojo_Fuego.png-250x252.jpg" width="200px">
@@ -140,6 +157,7 @@
                 Otros juegos de la saga Pokémon, juegos de rol por turnos como Final Fantasy o 
                 Dragon Quest, juegos de captura de monstruos como Temtem.</p>
         </div>
+        
     </section>
 
     <section id="coments">
@@ -172,7 +190,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="league-of-legends">
         <div class="container">
             <h3>League of Legends</h3>
             <img src="img/league-of-legends-champions-i102252.webp" width="300px">
@@ -192,7 +210,7 @@
 
             <p><h4>Si te gusta este juego, quizá te guste:</h4>
                 Otros MOBAs como Dota 2 o Heroes of the Storm, juegos de estrategia en tiempo real como Starcraft.</p>
-            </div>
+        </div>
     </section>
 
     <section id="coments">
@@ -225,7 +243,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="raimbow-six-siege">
         <div class="container">
             <h3>Raimbow Six Siege</h3>
             <img src="https://imgs.search.brave.com/gPtC7sBeVFWYsjVRiobvdtEAftgd-P6BZ4XaVFzFF4g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5hcGkucGxheXN0/YXRpb24uY29tL3Z1/bGNhbi9hcC9ybmQv/MjAyMjEwLzIwMTkv/UzhLVG1aTXZlbWZS/OHlmQXFIdkxwR0lQ/LmpwZw" width="300px">
@@ -372,6 +390,22 @@
             </ul>
         </nav>
     </footer>
+
+    <!-- Inicialización de Materialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar el dropdown
+            var dropdowns = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdowns, {
+                coverTrigger: false, // Opcional: para que el menú no cubra el trigger
+                constrainWidth: false // Opcional: para que el ancho no esté limitado al trigger
+            });
+
+            // Inicializar el sidenav para navegación móvil
+            var sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+        });
+    </script>
     
 </body>
 </html>
