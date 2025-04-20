@@ -140,21 +140,40 @@ form button:hover {
 }
 
 /*Para los botones con iconos de la pagina de contacto*/
-button {
-    background-color: #16213e; /* Azul oscuro */
-    color: #ffd700; /* Dorado */
-    border: 1px solid #ffd700;
-    padding: 10px;
-    border-radius: 4px;
+.btn-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    background-color: #16213e; /* Azul oscuro */
+    color: #ffd700; /* Texto dorado */
+    border: 2px solid #ffd700; /* Borde dorado */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-    background-color: #ffd700;
-    color: #16213e;
+.btn-icon img {
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: 30px; /* Ajusta el tamaño de la imagen */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+.btn-icon a {
+    text-decoration: none;
+    color: #ffd700; /* Texto dorado */
+    font-weight: bold;
+}
+
+.btn-icon:hover {
+    background-color: #ffd700; /* Fondo dorado */
+    color: #16213e; /* Texto oscuro */
+}
+
+.btn-icon:hover a {
+    color: #16213e; /* Texto oscuro en hover */
 }
 
 /* Responsividad para pantallas pequeñas */
