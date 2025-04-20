@@ -1,6 +1,8 @@
 /*Quiero darle un estilo como ARCANE de Netflix*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,19 +14,19 @@ body {
 
 /* Títulos con estilo elegante */
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cinzel', serif;
     color: #ffd700; /* Dorado brillante */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Navbar estilo Arcane */
 .nav-wrapper {
-    background-color: #0f3460; /* Azul oscuro */
-    border-bottom: 2px solid #ffd700; /* Línea dorada */
+    background-color: #263238; /* blue-grey darken-4 */
+    border-bottom: 2px solid #FFD740; /* amber accent-3 */
 }
 
 .nav-wrapper a {
-    color: #ffd700; /* Texto dorado */
+    color: #FFD740; /* Texto dorado */
     font-weight: bold;
 }
 
@@ -32,21 +34,18 @@ h1, h2, h3, h4 {
     color: #ffffff; /* Blanco al pasar el cursor */
 }
 
-/* Footer */
-footer {
-    background-color: #0f3460; /* Azul oscuro */
-    color: #e0e0e0; /* Texto claro */
-    padding: 20px 0;
-    border-top: 2px solid #ffd700; /* Línea dorada */
+/* Footer estilo Arcane */
+.page-footer {
+    background-color: #37474F; /* blue-grey darken-3 */
+    border-top: 2px solid #FFD740; /* amber accent-3 */
 }
 
-footer ul li a {
-    color: #ffd700;
-    text-decoration: none;
+.page-footer h5, .page-footer p, .page-footer a {
+    color: #FFD740; /* Texto dorado */
 }
 
-footer ul li a:hover {
-    color: #ffffff;
+.page-footer a:hover {
+    color: #FFFFFF; /* Blanco al pasar el cursor */
 }
 
 /* Botones estilo Arcane */
