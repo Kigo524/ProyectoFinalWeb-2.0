@@ -1,73 +1,106 @@
-/* Importar fuente moderna */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*Quiero darle un estilo como ARCANE de Netflix*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #f3e5f5, #e1bee7); /* Fondo con degradado */
+    background: linear-gradient(to bottom, #1a1a2e, #16213e); /* Fondo oscuro con degradado */
+    color: #e0e0e0; /* Texto claro */
     margin: 0;
     padding: 0;
 }
 
-/* Navbar */
+/* Títulos con estilo elegante */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #ffd700; /* Dorado brillante */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Navbar estilo Arcane */
 .nav-wrapper {
-    background-color: #6a1b9a; /* Color más vibrante */
+    background-color: #0f3460; /* Azul oscuro */
+    border-bottom: 2px solid #ffd700; /* Línea dorada */
+}
+
+.nav-wrapper a {
+    color: #ffd700; /* Texto dorado */
+    font-weight: bold;
+}
+
+.nav-wrapper a:hover {
+    color: #ffffff; /* Blanco al pasar el cursor */
 }
 
 /* Footer */
 footer {
-    background-color: #4a148c; /* Oscurece el footer */
+    background-color: #0f3460; /* Azul oscuro */
+    color: #e0e0e0; /* Texto claro */
     padding: 20px 0;
+    border-top: 2px solid #ffd700; /* Línea dorada */
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
+footer ul li a {
+    color: #ffd700;
+    text-decoration: none;
 }
 
-footer ul li {
-    margin-bottom: 10px;
+footer ul li a:hover {
+    color: #ffffff;
 }
 
-/* Espaciado entre secciones */
-section {
-    margin-bottom: 50px;
-}
-
-/* Imágenes responsivas */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Botones atractivos */
+/* Botones estilo Arcane */
 .btn {
-    background-color: #6a1b9a;
+    background-color: #ffd700; /* Dorado */
+    color: #1a1a2e; /* Texto oscuro */
+    font-weight: bold;
+    border: 2px solid #ffd700;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #4a148c;
+    background-color: transparent;
+    color: #ffd700;
 }
 
-/* Animaciones en tarjetas */
+/* Tarjetas con efecto brillante */
+.card {
+    background-color: #16213e; /* Azul oscuro */
+    color: #e0e0e0;
+    border: 1px solid #ffd700; /* Borde dorado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 .card:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Sombra dorada */
 }
 
 /* Tablas estilizadas */
 table {
     border-collapse: collapse;
     width: 100%;
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #ffd700; /* Bordes dorados */
     padding: 8px;
 }
 
 th {
-    background-color: #6a1b9a;
-    color: white;
+    background-color: #0f3460; /* Azul oscuro */
+    color: #ffd700; /* Texto dorado */
+}
+
+/* Imágenes con bordes brillantes */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffd700; /* Borde dorado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsividad para pantallas pequeñas */
