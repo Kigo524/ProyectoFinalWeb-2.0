@@ -1,0 +1,81 @@
+/* Importar fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f3e5f5, #e1bee7); /* Fondo con degradado */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.nav-wrapper {
+    background-color: #6a1b9a; /* Color más vibrante */
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c; /* Oscurece el footer */
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+/* Espaciado entre secciones */
+section {
+    margin-bottom: 50px;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botones atractivos */
+.btn {
+    background-color: #6a1b9a;
+}
+
+.btn:hover {
+    background-color: #4a148c;
+}
+
+/* Animaciones en tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Tablas estilizadas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+    .card {
+        flex-direction: column;
+    }
+}
