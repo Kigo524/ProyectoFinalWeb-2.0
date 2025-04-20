@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactame</title>
     <link rel="stylesheet" href="styles2.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stadia_controller" />
 </head>
 <body>
     <header>
@@ -24,37 +36,70 @@
     </header>
 
     <section>
-        <p>
-            Todos tus comentarios y sugerencias son bien recibidos c:
-        </p>
-        <p>
-            Gracias por visitar mi página c:
-        </p>
-        <form action="formulario" method="post">
-            <label for="nombre"><br>Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
-            <br>
-            <label for="usuario"><br>Usuario:</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Usuario" />
-            <br>
-            <label for="correo"><br>Correo:</label>
-            <input type="email" id="correo" name="correo" placeholder="Correo" />
-            <label for="comentario"><br>Comentario:</label>
-            <br>
-            <textarea rows="10" cols="50" id="comentario" name="comentario" placeholder="Agrega tu comentario c:"></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-            <button type="reset">Reset</button>
-        </form>
+        <div class="container center-align" style="padding: 2%;">
+            <p>
+                Todos tus comentarios y sugerencias son bien recibidos c:
+            </p>
+            <p>
+                Gracias por visitar mi página c:
+            </p>
+        </div>
     </section>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a target="_blank" href="about.html">Acerca de</a></li>
-            </ul>
-        </nav>
+    <div class="container center-align">
+        <form class="col s12" action="formulario" method="post">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate white-text">
+                    <label for="first_name">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate white-text">
+                    <label for="last_name">Apellido</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate white-text">
+                    <label for="email">Correo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea white-text"></textarea>
+                    <label for="textarea1">Comentario</label>
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light" type="reset" name="action">Limpiar</button>
+        </form>
+    </div>
+
+    <br>
+
+    <footer class="page-footer nav-wrapper blue-grey darken-3" style="padding-left: 5%; padding-right: 5%;"">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Suscribete</h5>
+                    <p class="grey-text text-lighten-4">Suscribete para no perderte de nuevos blogs y temas!</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="about.html">Acerca de</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2025 Copyright Text
+            </div>
+        </div>
     </footer>
     
 </body>
