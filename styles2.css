@@ -102,6 +102,61 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilo para el formulario */
+form {
+    background-color: #16213e; /* Azul oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    color: #ffd700; /* Dorado */
+    font-weight: bold;
+}
+
+form input, form textarea {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    border: 1px solid #ffd700; /* Borde dorado */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ffd700; /* Dorado */
+    color: #1a1a2e; /* Texto oscuro */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: transparent;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+}
+
+/*Para los botones con iconos de la pagina de contacto*/
+button {
+    background-color: #16213e; /* Azul oscuro */
+    color: #ffd700; /* Dorado */
+    border: 1px solid #ffd700;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffd700;
+    color: #16213e;
+}
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 600px) {
     h3 {

@@ -8,14 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Acerca de GameZone Kigo</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html">Juegos</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-            </ul>
-        </nav>
+        <div class="navbar-fixed">
+            <nav role="navigation">
+                <div class="nav-wrapper blue-grey darken-4" style="padding-left: 5%; padding-right: 5%;">
+                    <a href="index.html" class="brand-logo">
+                        <span class="material-symbols-outlined">stadia_controller</span> GameZoneKigo2
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a target="_blank" href="about.html">Acerca de</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section>
@@ -26,15 +31,15 @@
             Gracias por visitar mi página c:
         </p>
         <form action="formulario" method="post">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre"><br>Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
             <br>
-            <label for="usuario">Usuario:</label>
+            <label for="usuario"><br>Usuario:</label>
             <input type="text" id="usuario" name="usuario" placeholder="Usuario" />
             <br>
-            <label for="correo">Correo:</label>
+            <label for="correo"><br>Correo:</label>
             <input type="email" id="correo" name="correo" placeholder="Correo" />
-            <label for="comentario">Comentario:</label>
+            <label for="comentario"><br>Comentario:</label>
             <br>
             <textarea rows="10" cols="50" id="comentario" name="comentario" placeholder="Agrega tu comentario c:"></textarea>
             <br>
@@ -47,7 +52,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
+                <li><a target="_blank" href="about.html">Acerca de</a></li>
             </ul>
         </nav>
     </footer>
