@@ -517,14 +517,12 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar el carrusel
             var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, options);
-        });
-
-    // Or with jQuery
-
-        $(document).ready(function(){
-        $('.carousel').carousel();
+            M.Carousel.init(elems, {
+                fullWidth: true, // Opcional: para carrusel de ancho completo
+                indicators: true // Opcional: para mostrar indicadores
+            });
         });
     </script>
     
