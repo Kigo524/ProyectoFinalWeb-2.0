@@ -81,6 +81,14 @@
 
     <br><br>
 
+    <div class="carousel">
+        <a class="carousel-item" href="https://www.ubisoft.com/es-mx/game/rainbow-six/siege"><img src="img/Raimbow.webp"></a>
+        <a class="carousel-item" href="https://www.minecraft.net/es-es"><img src="img/minecraft-pictures-logo.webp"></a>
+        <a class="carousel-item" href="https://www.leagueoflegends.com/es-mx/"><img src="img/league-of-legends-notas.webp"></a>
+    </div>
+
+    <br><br>
+
     <section id="minecraft">
         <div class="container center-align z-depth-2" style="padding: 2%;">
             <h3>Minecraft</h3>
@@ -505,6 +513,18 @@
             // Inicializar el sidenav para navegación móvil
             var sidenavs = document.querySelectorAll('.sidenav');
             M.Sidenav.init(sidenavs);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+    // Or with jQuery
+
+        $(document).ready(function(){
+        $('.carousel').carousel();
         });
     </script>
     
