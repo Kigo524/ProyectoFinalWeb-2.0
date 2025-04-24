@@ -233,6 +233,13 @@ h1, h2, h3, h4 {
     box-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 0.8);
 }
 
+/* Separador decorativo */
+.arcane-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ffd700, transparent);
+    margin: 20px 0;
+}
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 600px) {
