@@ -213,6 +213,26 @@ form button:hover {
     background-color: #ffd700; /* Indicador activo en blanco */
 }
 
+/*Efectos de brillo e iluminacion*/
+/* Efecto de brillo en títulos */
+h1, h2, h3, h4 {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px rgba(255, 215, 0, 0.7);
+}
+
+/* Efecto de brillo en bordes */
+.arcane-carousel, .card, img {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Botones con efecto de iluminación */
+.btn {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 0.8);
+}
+
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 600px) {
