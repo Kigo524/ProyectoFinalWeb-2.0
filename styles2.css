@@ -176,6 +176,22 @@ form button:hover {
     color: #16213e; /* Texto oscuro en hover */
 }
 
+/*Para el carrousel*/
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel {
+    height: 500px; /* Ajusta la altura del carrusel */
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes se ajusten al tamaño del carrusel */
+}
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 600px) {
     h3 {
